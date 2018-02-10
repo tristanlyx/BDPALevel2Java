@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title th:text="${name}"/>
+	</head> 
+	<body style="background-color:#BDBDBD;">
+		<img src="CityBanner.png" style="width:100%;"/>
+		<div align="center">
+			<h1 th:text="${name}"/>
+			<table>
+				<tr>
+					<td valign="top">
+						<h3>Powers:</h3>
+						<ul>
+							<li th:text="${power1}"/>
+							<li th:text="${power2}"/>
+							<li th:text="${power3}"/>
+						</ul>
+						
+						<h3 th:text="'Some interesting facts about' + ${name}"/>
+						<p th:text="${fact1}"/>
+						<p th:text="${fact2}"/>
+						<p th:text="${fact3}"/>
+					</td>
+					<td>
+						<img src="Superhero.png"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>		
